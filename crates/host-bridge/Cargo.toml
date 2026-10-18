@@ -1,0 +1,13 @@
+[package]
+name = "host-bridge"
+description = "DLL loaded into the host game; drives the player with guest-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "host_bridge"
+crate-type = ["cdylib"]
+
+[dependencies]
+guest-core = { path = "../guest-core" }

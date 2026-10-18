@@ -1,0 +1,33 @@
+# Whitelist: ignore everything, then allow source files only.
+# Do not turn this into a normal ignore list (see AGENTS.md rule 2).
+*
+!*/
+
+!/.gitignore
+!/.gitattributes
+!/AGENTS.md
+!/CLAUDE.md
+!/README.md
+!/MODLOG.md
+!/CREDITS.md
+!/LICENSE
+!/Cargo.toml
+!/Cargo.lock
+!/rust-toolchain.toml
+
+!/docs/**/*.md
+!/playtests/*.md
+!/loader/*
+
+# Starter files (harmless in generated projects)
+!/STARTER.md
+!/new_project.py
+!/starter/**
+
+!/crates/*/Cargo.toml
+!/crates/**/*.rs
+
+# Never tracked, even if a rule above would match.
+/local/
+/references/
+/target/

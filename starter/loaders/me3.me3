@@ -1,0 +1,13 @@
+# me3 profile: loads host_bridge.dll into the game. Run with: me3 launch --profile loader/{{PROJECT_SLUG}}.me3
+# Check the field names against the installed me3 version's docs before first use (not tested).
+profileVersion = "v1"
+
+[[supports]]
+game = "{{ME3_GAME}}" # eldenring, nightreign, sekiro, darksouls3, armoredcore6 ...
+
+[[natives]]
+path = "../target/release/host_bridge.dll"
+
+# File-replacement mods (params, models, animations) will go in mod/ later.
+# [[packages]]
+# path = "../mod"

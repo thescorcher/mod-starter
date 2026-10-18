@@ -1,0 +1,6 @@
+[package]
+name = "guest-data"
+description = "Reads data from the player's own guest-game install into local/guest/"
+version.workspace = true
+edition.workspace = true
+license.workspace = true

@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = ["crates/guest-core", "crates/guest-data", "crates/host-bridge"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[profile.release]
+debug = true # keep symbols so crash logs are readable

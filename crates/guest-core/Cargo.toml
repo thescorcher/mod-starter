@@ -1,0 +1,6 @@
+[package]
+name = "guest-core"
+description = "The guest game's rules, rebuilt independent of any host game"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
